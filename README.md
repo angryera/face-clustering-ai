@@ -1,11 +1,15 @@
-# My AI Project
+# FACE CLUSTERING AI
 
 This project is designed to implement an AI model using Python. It includes functionalities for loading datasets, training models, and making predictions.
+
+## Purpose
+
+The purpose of this project is to develop a face recognition system using advanced machine learning techniques. The system aims to identify and verify individuals by analyzing facial features, making it suitable for applications such as security, authentication, and personalized user experiences.
 
 ## Project Structure
 
 ```
-my-ai-project
+face-clustering-ai
 ├── src
 │   ├── main.py          # Entry point of the application
 │   ├── models
@@ -31,6 +35,23 @@ my-ai-project
    ```
    pip install -r requirements.txt
    ```
+
+3. If `pip install dlib` fails, follow these steps to build `dlib` manually:
+   - Install CMake, a C++ compiler, and Python development headers.
+   - Clone the `dlib` repository:
+     ```
+     git clone https://github.com/davisking/dlib.git
+     cd dlib
+     ```
+   - Build and install `dlib`:
+     ```
+     mkdir build
+     cd build
+     cmake ..
+     cmake --build . --config Release
+     cd ..
+     python setup.py install
+     ```
 
 ## Usage
 
